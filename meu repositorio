@@ -1,0 +1,88 @@
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $ projeto: Robo seguidor de linha 
+bash: projeto:: command not found
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $ Objetivo: criar um robo capaz de seguir uma linha preta, ultilizando sensores e motores, o robo vai se movendo automaticamente, corrigindo seu caminho conforme o necessario.
+bash: Objetivo:: command not found
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $ Componentes necessarios: placa motora, sensores de linha, motores DC, diver de moto, bateria, estrutura de robo, fios e conectores, pista.
+bash: Componentes: command not found
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $ Passo a passo do projeto
+bash: Passo: command not found
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $ Primeiro: montagem do robo: comec e cone 
+bash: Primeiro:: command not found
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $ Segundo: programaçao: o robo deve ser programado para seguir a linha, isso e feito lendo os sinais dos sensores de linha e ajustando a movimentaçao dos motores conforme a leitura.
+bash: Segundo:: command not found
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $ Algoritmo Basico: se o sensor da esquerda for detectado a linha , o robo deve virar a linha e se detectar a direita, o robo deve virar a direita, se nao detectar nenhum sensor ele seguira em frente.
+bash: Algoritmo: command not found
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $ Exemplo de codigo simples em arduino
+bash: Exemplo: command not found
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $ const int sensorEsquerdo = 2; //pino do sensor esquerdo
+bash: const: command not found
+bash: //pino: No such file or directory
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $ const int sensorDireito = 3; // pino do sensor direito 
+bash: const: command not found
+bash: //: Is a directory
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $ const int motorEsquerdo = 9; // pino do motor esquerdo 
+bash: const: command not found
+bash: //: Is a directory
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $ const int motorDireito; 10; // pino do motor direito 
+bash: const: command not found
+bash: 10: command not found
+bash: //: Is a directory
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $ void setup() {
+bash: syntax error near unexpected token `('
+ pinMode(sensorDireito, INPUT);
+  pinMode(motorEsquerdo, OUTPUT);
+  pinMode(motorDireito, OUTPUT);@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $   pinMode(sensorEsquerdo, INPUT);
+bash: syntax error near unexpected token `sensorEsquerdo,'
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $   pinMode(sensorDireito, INPUT);
+bash: syntax error near unexpected token `sensorDireito,'
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $   pinMode(motorEsquerdo, OUTPUT);
+bash: syntax error near unexpected token `motorEsquerdo,'
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $   pinMode(motorDireito, OUTPUT);
+bash: syntax error near unexpected token `motorDireito,'
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $ void loop() {
+bash: syntax error near unexpected token `('
+sensorEsquerdo);
+  int leituraDireita = digitalRead(sensorDireito);
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $   int leituraEsquerda = digitalRead(sensorEsquerdo);
+bash: syntax error near unexpected token `('
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $   int leituraDireita = digitalRead(sensorDireito);
+bash: syntax error near unexpected token `('
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $ if (leituraEsquerda == LOW && leituraDireita == LOW) {
+bash: syntax error near unexpected token `{'
+ (move em frente)
+    digitalWrite(motorEsquerdo, HIGH);
+    digitalWrite(motorDireito, HIGH);
+  } else if (leituraEsquerda == LOW && leituraDireita =@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $     // Ambos os sensores não detectam a linha (move em frente)
+bash: syntax error near unexpected token `('
+= HIGH) {
+    // Sensor direito detecta a linha (vira à direita)
+    digitalWrite(motorEsquerdo, HIGH);
+    digitalWrite(motorDireito, LOW);
+  } else if (leituraEsquerda == HIGH && leituraDireita == L@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $     digitalWrite(motorEsquerdo, HIGH);
+bash: syntax error near unexpected token `motorEsquerdo,'
+ à esquerda)
+    digitalWrite(motorEsquerdo, LOW);
+    digitalWrite(motorDireito, HIGH);@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $     digitalWrite(motorDireito, HIGH);
+bash: syntax error near unexpected token `motorDireito,'
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $   } else if (leituraEsquerda == LOW && leituraDireita == HIGH) {
+bash: syntax error near unexpected token `}'
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $     // Sensor direito detecta a linha (vira à direita)
+bash: syntax error near unexpected token `('
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $     digitalWrite(motorEsquerdo, HIGH);
+bash: syntax error near unexpected token `motorEsquerdo,'
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $     digitalWrite(motorDireito, LOW);
+bash: syntax error near unexpected token `motorDireito,'
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $   } else if (leituraEsquerda == HIGH && leituraDireita == LOW) {
+bash: syntax error near unexpected token `}'
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $     // Sensor esquerdo detecta a linha (vira à esquerda)
+bash: syntax error near unexpected token `('
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $     digitalWrite(motorEsquerdo, LOW);
+bash: syntax error near unexpected token `motorEsquerdo,'
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $     digitalWrite(motorDireito, HIGH);
+bash: syntax error near unexpected token `motorDireito,'
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $ Teste e ajustes: primeiro: depoi segundo: se o robo nao estiver seguindo a linha corretamente, so ajustar a posiçao dos setores convencionais, ou velocidade 
+bash: Teste: command not found
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $ Melhorias possiveis: Sensores adicionais, algotitmo mais complexos, adiçao de um display lcd
+bash: Melhorias: command not found
+@kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $ Possiveis extensao para o projeto: sdicio e se Este projeto é uma excelente base para aprender sobre robótica e sistemas independentes. Ele pode ser expandido de diversas formas, oferecendo desafios contínuos para aprimorar o desempenho do robô e oferece uma introdução prática à programação e ao uso de sensores em robótica, sendo uma ótima base para projetos mais complexos para o nosso futuro. ra projetos mais 
+ca e sistemas independentes. Ele pode ser expandido de diversas formas, oferecendo desafios contínuos para aprimorar o desempenho do robô e oferece uma introdução prática à programação e ao uso de sensores em rob

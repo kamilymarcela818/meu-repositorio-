@@ -1,5 +1,4 @@
 @kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $ projeto: Robo seguidor de linha 
-bash: projeto:: command not found
 @kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $ Objetivo: criar um robo capaz de seguir uma linha preta, ultilizando sensores e motores, o robo vai se movendo automaticamente, corrigindo seu caminho conforme o necessario.
 bash: Objetivo:: command not found
 @kamilymarcela818 ➜ /workspaces/meu-repositorio- (main) $ Componentes necessarios: placa motora, sensores de linha, motores DC, diver de moto, bateria, estrutura de robo, fios e conectores, pista.
